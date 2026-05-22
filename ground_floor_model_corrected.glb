@@ -1,0 +1,29 @@
+{
+  "units": "metres",
+  "layout_source": "CUS_P_02-compressed.pdf, proposed ground floor, page 13 / P.12",
+  "purpose": "Approximate VR visualisation only; not CAD/BIM accurate.",
+  "dimensions_used": {
+    "overall_internal_width_m": 10.61,
+    "depth_m": 4.2,
+    "height_m": 2.61,
+    "service_block_width_m": 1.98,
+    "utility_depth_m": 1.4300000000000002,
+    "bathroom_depth_m": 2.77,
+    "living_width_m": 4.95,
+    "bedroom_width_m": 3.3999999999999995,
+    "portico_approx_width_m": 5.56,
+    "portico_approx_depth_m": 4.05
+  },
+  "room_areas_from_pdf": {
+    "utility_anti_rip_m2": 2.77,
+    "bathroom_bagno_m2": 5.49,
+    "bedroom_camera_m2": 13.42,
+    "living_soggiorno_m2": 20.14,
+    "portico_m2": 22.5
+  },
+  "vr_fixes": [
+    "camera child y set to 0 on enter-vr to avoid double head-height in local-floor mode",
+    "movement component locks rig y position to 0",
+    "start position set under the portico at floor level"
+  ]
+}
