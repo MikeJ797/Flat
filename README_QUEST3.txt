@@ -1,54 +1,55 @@
-CUS proposed ground-floor apartment - corrected Quest 3 VR mock-up
-=====================================================================
+CUS proposed ground-floor apartment - plan-matched Quest 3 VR mock-up
+==========================================================================
 
-What has been corrected in this version
---------------------------------------
-1. VR height / floating problem
-   - The camera rig now starts at floor level.
-   - On entering VR, the headset camera is reset to y=0 so the Quest 3's local-floor tracking supplies your real head height.
-   - Horizontal movement is locked to the floor plane so controller movement cannot drift upward.
+Main changes in this version
+----------------------------
+1. Correct orientation from the East/window side
+   - Start outside the East/window side facing the glazing.
+   - Bathroom and anti-rip/utility are on the left.
+   - Bedroom is on the right.
+   - This fixes the previous mirrored/wrong-feeling layout.
 
-2. Ground-floor room layout
-   - Rebuilt using the visible page 13 / P.12 proposed ground-floor dimensions:
-     - Utility / anti-rip: 2.77 m²
-     - Bathroom / bagno: 5.49 m²
-     - Bedroom / camera: 13.42 m²
-     - Living / soggiorno: 20.14 m²
-     - Portico: 22.50 m²
-   - The left-side service block is now split into bathroom at the front/lower side and utility at the rear/top side.
-   - The living room is in the centre.
-   - The bedroom is on the right.
-   - The portico is outside the lower-right/front side, matching the proposed plan better.
+2. Controls rebuilt
+   - The model is no longer rotated to make the front view work.
+   - Movement now follows the headset/camera direction properly.
+   - Left stick moves, right stick turns.
+   - If your Quest maps the left stick backwards, press X on the left controller to invert the joystick Y axis.
+   - Desktop testing: W/A/S/D and mouse. Press I to invert movement on desktop.
 
-3. Furniture / fixtures
-   - Reduced to key scale items only.
-   - Kitchen run, fridge, central table, sofa, coffee table, bed, small wardrobe, bathroom fittings, washing machine/storage.
-   - Removed unnecessary decorative furniture so circulation and door positions are easier to judge.
-   - Furniture has been kept away from the obvious doorways and door swings.
+3. Furniture/fixtures simplified and matched to the plan
+   - Only the key plan items are included: kitchen run, fridge, dining table/chairs, sofa, bed, bathroom fixtures and utility/storage items.
+   - Positions have been adjusted to match the furniture shown on the proposed ground-floor plan and to avoid blocking the main door openings.
 
-How to use on Meta Quest 3
---------------------------
-1. Unzip this folder.
-2. Upload the whole folder to GitHub Pages, Netlify, Cloudflare Pages, or another HTTPS host.
-3. Open the HTTPS link in Meta Quest Browser.
-4. Press Enter VR.
-5. Use the Quest controller thumbstick to move horizontally.
+4. Scale figures added
+   - A simple standing person of approximately 5 ft 8 in / 1.73 m has been added in each main space:
+     bathroom, anti-rip/utility, living room, bedroom and portico.
+   - These are deliberately basic scale figures, not decorative people.
 
-Desktop check
--------------
-Open the published page in a normal browser and use:
+Source / accuracy note
+----------------------
+This version is based on CUS_P_02-compressed.pdf, proposed ground-floor plan P.12 / page 13.
+It is still an approximate VR interpretation from the PDF drawing, not a measured CAD/BIM model.
+Use it for understanding scale and layout only.
+
+For exact modelling, ask the architect for DWG, DXF, IFC, SketchUp, Revit or Archicad files.
+
+Uploading to GitHub Pages
+-------------------------
+Replace the previous GitHub repository files with the contents of this folder, not the zip itself.
+The index.html file must remain at the repository root.
+
+Quest 3 use
+-----------
+1. Open the GitHub Pages HTTPS link in Meta Quest Browser.
+2. Press Enter VR.
+3. Stand/recenter if needed.
+4. Use the left stick to move, right stick to turn.
+5. If forward/back is reversed, press X on the left controller.
+
+Desktop use
+-----------
 - Mouse to look around.
-- W / A / S / D to move.
-- L to toggle room labels and subtle door-clearance zones.
-
-If you still appear too high in Quest 3
---------------------------------------
-1. Check your Quest Guardian / boundary floor height.
-2. Use Meta's recenter view option.
-3. Open the link again and re-enter VR.
-
-Accuracy note
--------------
-This remains an approximate visualisation built from the PDF plan image. It is suitable for checking rough space, furniture scale and circulation. It is not suitable for construction, planning submission, measured pricing or compliance.
-
-For a genuinely accurate VR model, request the architect's DWG, DXF, IFC, Revit, Archicad or SketchUp file.
+- W/A/S/D to move.
+- I to invert forward/back movement.
+- L to toggle optional room labels.
+- P to hide/show the plan reference board.

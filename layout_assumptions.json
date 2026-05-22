@@ -1,0 +1,65 @@
+{
+  "units": "metres",
+  "source": "CUS_P_02-compressed.pdf, proposed ground floor P.12 / page 13",
+  "purpose": "Approximate VR visualisation for scale/layout only, not a construction model.",
+  "orientation": "Start outside the East/window side looking toward the rooms. Bedroom appears on user's right; bathroom/utility on left.",
+  "dimensions_used_from_plan": {
+    "overall_internal_width_m": 10.61,
+    "depth_from_front_window_side_to_rear_m": 4.2,
+    "proposed_height_m": 2.61,
+    "anti_rip_area_m2": 2.77,
+    "bathroom_area_m2": 5.49,
+    "bedroom_area_m2": 13.42,
+    "living_area_m2": 20.14,
+    "portico_area_m2": 22.5
+  },
+  "rooms": {
+    "anti_rip_utility": {
+      "x_min": 0.0,
+      "x_max": 1.98,
+      "z_min": 2.77,
+      "z_max": 4.2
+    },
+    "bathroom": {
+      "x_min": 0.0,
+      "x_max": 1.98,
+      "z_min": 0.0,
+      "z_max": 2.77
+    },
+    "living": {
+      "x_min": 2.13,
+      "x_max": 7.08,
+      "z_min": 0.0,
+      "z_max": 4.2
+    },
+    "bedroom": {
+      "x_min": 7.21,
+      "x_max": 10.61,
+      "z_min": 0.0,
+      "z_max": 4.2
+    },
+    "portico": {
+      "x_min": 5.25,
+      "x_max": 10.61,
+      "z_min": -4.2,
+      "z_max": 0.0
+    }
+  },
+  "scale_figures": {
+    "height_m": 1.73,
+    "height_ft_in": "5 ft 8 in",
+    "placed_in": [
+      "bathroom",
+      "anti-rip/utility",
+      "living",
+      "bedroom",
+      "portico"
+    ]
+  },
+  "control_notes": [
+    "model is oriented so default camera looks from the East/window side toward the house without rotating the whole scene",
+    "left stick movement uses camera world direction",
+    "press X on left controller to invert stick Y if browser/controller maps it backwards",
+    "rig y position is locked to 0; WebXR local-floor supplies headset height"
+  ]
+}
